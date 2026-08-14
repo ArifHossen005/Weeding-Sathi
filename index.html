@@ -32,7 +32,7 @@
     overflow-x:hidden;
     -webkit-font-smoothing:antialiased;
   }
-  .stage{ position:relative; max-width:560px; margin:0 auto; min-height:100vh; }
+ .stage{ position:relative; width:100%; margin:0 auto; min-height:100vh; }
 
   /* ---------- ambient particles ---------- */
   #particles{position:fixed;inset:0;pointer-events:none;z-index:1;overflow:hidden;}
@@ -50,6 +50,9 @@
     perspective:2000px;
     cursor:pointer;
   }
+  @media (max-width:400px){
+  .scroll{ padding:34px 16px 46px; }
+}
   .doorWrap{ position:relative; width:100%; height:100%; display:flex; }
   .door{
     position:relative; width:50%; height:100%;
